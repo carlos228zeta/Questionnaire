@@ -1,0 +1,101 @@
+/* Container yang membungkus seluruh form */
+.questionnaire-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  background: linear-gradient(to bottom, #000000, #0000ff, #00ffff); /* Gradasi hitam ke cyan */
+  min-height: 100vh;
+}
+
+/* Formulir kuesioner */
+.questionnaire-form {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid black; /* Border hitam di sekitar form */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.questionnaire-form h2 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #202124;
+}
+
+/* Container untuk tabel */
+.table-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black; /* Border hitam di sekitar tabel */
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+/* Baris tabel */
+.question-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid black; /* Border hitam antar baris */
+}
+
+/* Pertanyaan berada di kiri */
+.question-text {
+  flex: 1; /* Memperbesar pertanyaan agar lebih lebar */
+  padding-right: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #202124;
+}
+
+/* Opsi berada di kanan */
+.question-options {
+  display: flex;
+  justify-content: space-between;
+  flex: 1.5; /* Memperbesar area opsi */
+}
+
+/* Opsi label untuk radio button */
+.option-label {
+  font-size: 16px;
+  font-weight: 400;
+  color: #202124;
+  margin-right: 15px; /* Jarak antar opsi */
+}
+
+/* Input radio button */
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+/* Tombol submit */
+.questionnaire-form button {
+  padding: 12px 20px;
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  align-self: flex-end;
+  transition: background-color 0.3s;
+}
+
+.questionnaire-form button:hover {
+  background-color: #357ae8;
+}
+
+/* Scrollbar untuk form yang panjang */
+.questionnaire-form {
+  max-height: 90vh;
+  overflow-y: auto;
+  padding-right: 10px;
+}
